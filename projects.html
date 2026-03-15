@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Projects — Shanmuka Gottimukkala</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="mesh"></div>
+<nav class="nav">
+  <a class="nav-logo" href="index.html"><div class="nav-dot"></div>Shanmuka G.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="ph">
+    <div class="ph-eyebrow">03 — Work</div>
+    <h1 class="ph-title">Projects &amp; <em>Builds</em></h1>
+    <p class="ph-sub">Engineering, AI/ML, full-stack applications, embedded systems, 3D simulations, and creative tech — all built and deployed independently.</p>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="filter-row r">
+        <button class="fb on" onclick="filter('all',this)">All</button>
+        <button class="fb" onclick="filter('ai',this)">AI / ML</button>
+        <button class="fb" onclick="filter('web',this)">Web &amp; Full-Stack</button>
+        <button class="fb" onclick="filter('hardware',this)">Hardware</button>
+        <button class="fb" onclick="filter('creative',this)">Creative &amp; 3D</button>
+      </div>
+
+      <div class="proj-list r">
+        <div class="proj-row" data-cat="ai">
+          <div class="proj-n">01</div>
+          <div>
+            <div class="ptags"><span class="ptag ptag-a">Award Winner</span><span class="ptag ptag-a">Research</span><span class="ptag">CNN</span><span class="ptag">TensorFlow</span><span class="ptag">STAC API</span></div>
+            <div class="proj-name">Satellite Image Pollution Classification</div>
+            <div class="proj-desc">Deep-learning CNN classifying satellite imagery as polluted vs. non-polluted. Full dataset preprocessing, model training, evaluation graphs, and end-to-end inference pipeline for real-world environmental monitoring.</div>
+            <div class="proj-impact">2nd Place — Fulton County Student Technology Competition 2026</div>
+          </div>
+          <div class="proj-yr">2026</div>
+        </div>
+
+        <div class="proj-row" data-cat="hardware">
+          <div class="proj-n">02</div>
+          <div>
+            <div class="ptags"><span class="ptag ptag-a">Published Research</span><span class="ptag">Raspberry Pi</span><span class="ptag">Arduino</span><span class="ptag">IoT</span></div>
+            <div class="proj-name">Emotion-Aware IoT Desk Assistant</div>
+            <div class="proj-desc">Smart workspace integrating environmental sensors (temperature, light, sound) with Raspberry Pi and Arduino. Real-time animated dashboard with mood-based feedback to enhance focus. Research published on viXra; launched on Product Hunt.</div>
+            <div class="proj-impact">viXra:2602.0078 · Product Hunt Launch</div>
+          </div>
+          <div class="proj-yr">2025–26</div>
+        </div>
+
+        <div class="proj-row" data-cat="web">
+          <div class="proj-n">03</div>
+          <div>
+            <div class="ptags"><span class="ptag ptag-a">Open Source</span><span class="ptag">JavaScript</span><span class="ptag">NPM</span></div>
+            <div class="proj-name">OneLanggg NPM Package</div>
+            <div class="proj-desc">Open-source JS package merging HTML, CSS, and JavaScript into a unified development format, simplifying UI creation. Published to NPM and adopted by developers worldwide.</div>
+            <div class="proj-impact">~300 external developer downloads</div>
+          </div>
+          <div class="proj-yr">2025</div>
+        </div>
+
+        <div class="proj-row" data-cat="web">
+          <div class="proj-n">04</div>
+          <div>
+            <div class="ptags"><span class="ptag">MERN Stack</span><span class="ptag">Real-Time</span><span class="ptag">MongoDB</span></div>
+            <div class="proj-name">Restaurant Order Tracker</div>
+            <div class="proj-desc">Client-server web application for live order placement and real-time status tracking. Full MERN stack with real-time data handling and system architecture.</div>
+          </div>
+          <div class="proj-yr">2025</div>
+        </div>
+
+        <div class="proj-row" data-cat="ai">
+          <div class="proj-n">05</div>
+          <div>
+            <div class="ptags"><span class="ptag">TensorFlow</span><span class="ptag">Healthcare AI</span><span class="ptag">Time-Series</span><span class="ptag">Ensemble Learning</span></div>
+            <div class="proj-name">AI / ML Research Projects</div>
+            <div class="proj-desc">Disease detection models for lung and breast cancer datasets. Stock market prediction via time-series analysis and random forests. Emphasis on practical, production-ready solutions over purely theoretical approaches.</div>
+          </div>
+          <div class="proj-yr">2024–26</div>
+        </div>
+
+        <div class="proj-row" data-cat="creative">
+          <div class="proj-n">06</div>
+          <div>
+            <div class="ptags"><span class="ptag">Blender</span><span class="ptag">Inverse Kinematics</span><span class="ptag">Physics Sims</span><span class="ptag">Sketchfab</span></div>
+            <div class="proj-name">3D Simulations &amp; VFX Portfolio</div>
+            <div class="proj-desc">Mechanical arms with inverse kinematics; Shang-Chi's rings with metallic materials; fire, cloth, fluid, and smoke simulations in Blender 4.x+. Integrated into video editing and VFX storytelling projects.</div>
+            <div class="proj-impact">3.4k+ Sketchfab views · 951 total downloads</div>
+          </div>
+          <div class="proj-yr">2024</div>
+        </div>
+
+        <div class="proj-row" data-cat="hardware">
+          <div class="proj-n">07</div>
+          <div>
+            <div class="ptags"><span class="ptag">Arduino</span><span class="ptag">Embedded Systems</span><span class="ptag">Sensors</span></div>
+            <div class="proj-name">Ultrasonic Laser Measurement Tool</div>
+            <div class="proj-desc">Arduino-based distance measurement device combining an ultrasonic sensor and laser pointer with real-time display logic and calibration systems.</div>
+          </div>
+          <div class="proj-yr">2024</div>
+        </div>
+
+        <div class="proj-row" data-cat="creative">
+          <div class="proj-n">08</div>
+          <div>
+            <div class="ptags"><span class="ptag">AI Production</span><span class="ptag">Spotify</span><span class="ptag">Apple Music</span><span class="ptag">YouTube</span></div>
+            <div class="proj-name">AI-Assisted Music Album</div>
+            <div class="proj-desc">Full music album created using AI-assisted production tools, distributed across Spotify, YouTube, and Apple Music.</div>
+            <div class="proj-impact">~400 total streams and views</div>
+          </div>
+          <div class="proj-yr">2025</div>
+        </div>
+
+        <div class="proj-row" data-cat="web">
+          <div class="proj-n">09</div>
+          <div>
+            <div class="ptags"><span class="ptag ptag-a">In Progress</span><span class="ptag">JavaScript</span><span class="ptag">Event-Driven UI</span></div>
+            <div class="proj-name">Desktop-Style Web Interface (OS Simulator)</div>
+            <div class="proj-desc">Web platform simulating an OS interface with draggable windows and interactive icons — demonstrating event-driven programming, system-level design, and advanced UX modeling.</div>
+          </div>
+          <div class="proj-yr">2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="foot-l">© 2026 Shanmuka Gottimukkala</span>
+  <ul class="foot-links">
+    <li><a href="https://github.com/ShanmukaGottimukkala" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/shanmuka-gottimukkala/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://vixra.org/abs/2602.0078" target="_blank">Research</a></li>
+    <li><a href="https://www.npmjs.com/package/onelanggg" target="_blank">NPM</a></li>
+  </ul>
+</footer>
+<script src="shared.js"></script>
+<script src="easter.js"></script>
+<script src="interactions.js"></script>
+<script src="interactive.js"></script>
+</body></html>

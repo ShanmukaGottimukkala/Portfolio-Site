@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shanmuka Gottimukkala — Engineer & Researcher</title>
+<link rel="stylesheet" href="styles.css"/>
+<style>
+/* HOME-SPECIFIC */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:62px;position:relative;border-bottom:1px solid var(--line)}
+.hero-main{max-width:1180px;margin:0 auto;width:100%;padding:5rem 2.25rem 4rem;display:grid;grid-template-columns:1fr 340px;gap:5rem;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-size:.77rem;font-weight:600;color:var(--accent2);letter-spacing:.04em;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);padding:.32rem .9rem;border-radius:100px;margin-bottom:2rem;width:fit-content;opacity:0;animation:up .7s .05s var(--ease) forwards}
+.eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent);flex-shrink:0}
+h1{font-family:var(--h);font-size:clamp(3.2rem,7.5vw,7rem);font-weight:800;line-height:1.02;letter-spacing:-.04em;color:var(--text);margin-bottom:1.5rem;opacity:0;animation:up .7s .12s var(--ease) forwards}
+.grad{background:linear-gradient(135deg,#a5b4fc 0%,#818cf8 35%,#6366f1 65%,#c084fc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.08rem;font-weight:400;color:var(--text2);max-width:500px;line-height:1.78;margin-bottom:2.5rem;opacity:0;animation:up .7s .2s var(--ease) forwards}
+.hero-actions{opacity:0;animation:up .7s .28s var(--ease) forwards}
+/* panel */
+.panel{background:var(--card);border:1px solid var(--card-b);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh2);opacity:0;animation:fromRight .75s .32s var(--ease) forwards}
+.panel-top{padding:1rem 1.5rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.5rem}
+.pdots{display:flex;gap:.38rem}
+.pdot{width:10px;height:10px;border-radius:50%;background:var(--text3)}
+.pdot:first-child{background:#FF5F57}.pdot:nth-child(2){background:#FFBD2E}.pdot:nth-child(3){background:#28C840}
+.ptitle{font-size:.7rem;font-weight:500;color:var(--text3);margin-left:.25rem;letter-spacing:.04em}
+.pstat{display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.5rem;border-bottom:1px solid var(--line);transition:background .15s}
+.pstat:last-child{border-bottom:none}
+.pstat:hover{background:rgba(255,255,255,.03)}
+.ps-lbl{font-size:.77rem;color:var(--text2)}
+.ps-val{font-family:var(--h);font-size:1.05rem;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.ps-val .a{color:var(--accent2)}
+.ps-badge{font-size:.64rem;font-weight:700;padding:.18rem .55rem;border-radius:100px;background:rgba(16,185,129,.12);color:#10B981;border:1px solid rgba(16,185,129,.25);letter-spacing:.04em}
+/* bar */
+.hero-bar{max-width:1180px;margin:0 auto;width:100%;display:flex;border-top:1px solid var(--line);opacity:0;animation:fadeIn .7s .52s var(--ease) forwards}
+.hb{flex:1;padding:1.1rem 2.25rem;display:flex;align-items:center;gap:.6rem;font-size:.77rem;font-weight:500;color:var(--text3);border-right:1px solid var(--line);transition:color .18s}
+.hb:last-child{border-right:none}
+.hb:hover{color:var(--text2)}
+.hb-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;box-shadow:0 0 6px var(--accent)}
+/* home intro section */
+#intro{padding:6rem 2.25rem}
+.intro-text{font-family:var(--h);font-size:1.2rem;font-weight:400;color:var(--text2);line-height:1.75;max-width:620px;margin-bottom:4rem}
+.intro-text strong{color:var(--text);font-weight:600}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fromRight{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:900px){
+  .hero-main{grid-template-columns:1fr;padding:3.5rem 1.5rem 3rem;gap:3rem}
+  .panel{animation:up .75s .32s var(--ease) forwards}
+  .hb{padding:1rem 1rem;font-size:.7rem}
+  #intro{padding:4rem 1.5rem}
+}
+</style>
+</head>
+<body>
+<div class="mesh"></div>
+<nav class="nav">
+  <a class="nav-logo" href="index.html"><div class="nav-dot"></div>Shanmuka G.</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-main">
+    <div>
+      <div class="eyebrow">Sophomore · Milton High School · Alpharetta, GA</div>
+      <h1><span class=grad>Shanmuka Gottimukkala</span></h1>
+      <h2 style="font-size:50px; display: inline;">Engineer.  Researcher.  Builder.</h2>
+      <p class="hero-sub">I develop systems that connect computation to the real-world — from satellite pollution detection with CNNs to open-source tools adopted by developers worldwide.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-top">
+        <div class="pdots"><div class="pdot"></div><div class="pdot"></div><div class="pdot"></div></div>
+        <span class="ptitle">profile.json</span>
+      </div>
+      <div class="pstat"><span class="ps-lbl">USACO Division</span><span class="ps-val"><span class="a">Gold</span> ✦</span></div>
+      <div class="pstat"><span class="ps-lbl">Bronze Pre-College Rank</span><span class="ps-val">1<span class="a">st</span>/2,374</span></div>
+      <div class="pstat"><span class="ps-lbl">Silver Pre-College Rank</span><span class="ps-val">1<span class="a">st</span>/1,916</span></div>
+      <div class="pstat"><span class="ps-lbl">Programming</span><span class="ps-val">7<span class="a">+</span> years</span></div>
+      <div class="pstat"><span class="ps-lbl">Sketchfab Views</span><span class="ps-val">3.6<span class="a">k+</span></span></div>
+      <div class="pstat"><span class="ps-lbl">NPM Downloads</span><span class="ps-val">300<span class="a">+</span></span></div>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <div class="hb"><div class="hb-dot"></div>IBM AI Foundations Certified</div>
+    <div class="hb"><div class="hb-dot"></div>Pre-Print Research Author · 2026</div>
+    <div class="hb"><div class="hb-dot"></div>USACO Gold Division</div>
+    <div class="hb"><div class="hb-dot"></div>Lockheed Martin · 2nd Place</div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="wrap">
+    <p class="intro-text r">A sophomore builder — from ML research and embedded systems to club leadership and international hackathons. Here's <strong>what I've made, won, and led.</strong></p>
+    <div class="nav-cards">
+      <a href="about.html" class="nc r"><div class="nc-num">01</div><div class="nc-title">About &amp; Skills</div><div class="nc-desc">My story, technical stack, and the ideas that drive my work at the intersection of AI and human systems.</div><div class="nc-arrow">View →</div></a>
+      <a href="awards.html" class="nc r"><div class="nc-num">02</div><div class="nc-title">Honors &amp; Awards</div><div class="nc-desc">USACO Gold, Lockheed Martin Code Quest, GaSTC, Fulton County Tech Competition, and more.</div><div class="nc-arrow">View →</div></a>
+      <a href="projects.html" class="nc r"><div class="nc-num">03</div><div class="nc-title">Projects</div><div class="nc-desc">CNN pollution detection, IoT desk assistants, MERN apps, open-source packages, 3D simulations.</div><div class="nc-arrow">View →</div></a>
+      <a href="experience.html" class="nc r"><div class="nc-num">04</div><div class="nc-title">Experience</div><div class="nc-desc">Leadership, internships, nonprofit work, and community initiatives across 8+ organizations.</div><div class="nc-arrow">View →</div></a>
+      <a href="research.html" class="nc r"><div class="nc-num">05</div><div class="nc-title">Research</div><div class="nc-desc">Published preprint on IoT productivity systems. Selected for MIT Critical Data × NSRI 2026 cohort.</div><div class="nc-arrow">View →</div></a>
+      <a href="contact.html" class="nc r"><div class="nc-num">06</div><div class="nc-title">Contact</div><div class="nc-desc">Open to collaborations, competitions, internships, and conversations about building things.</div><div class="nc-arrow">Reach Out →</div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="foot-l">© 2026 Shanmuka Gottimukkala</span>
+  <ul class="foot-links">
+    <li><a href="https://github.com/ShanmukaGottimukkala" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/shanmuka-gottimukkala/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://vixra.org/abs/2602.0078" target="_blank">Research</a></li>
+    <li><a href="https://www.npmjs.com/package/onelanggg" target="_blank">NPM</a></li>
+  </ul>
+</footer>
+<script src="shared.js"></script>
+<script src="interactions.js"></script>
+<script src="interactive.js"></script>
+</body></html>
